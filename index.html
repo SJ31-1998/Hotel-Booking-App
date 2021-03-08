@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>index</title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+         <link href="styles\index.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+         <link href="styles\common.css" rel="stylesheet">
+         
+    </head>
+     <body>
+         <div class="content">
+            <header class="headerFixed" id="headernav"></header>
+
+           <div class="modal fade" id="loginModal"></div>
+
+           
+             <div>
+                 <div class="image">
+                 <form>
+                     <div>
+                     <input  class="no-outline" type="text" id="city" name="city" placeholder="City "> 
+                    </div>
+                 </div>
+                 </form><br/><br/>
+                 <div class="view3">
+                    <div class="shade shade1">
+                         <a  href ="list.html"><img id="img2"  class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"></a>
+                         <div id="cityname"><strong>Delhi</strong></div>
+                    </div>
+                    <div class="shade shade1">
+                        <a href="list.html">  <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"></a>
+                         <!-- <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"> -->
+                         <div id="cityname"><strong>Goa</strong></div>
+                    </div>
+                    <div class="shade shade1">
+                        <a href="list.html">  <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" ></a>
+                         <!-- <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" > -->
+                         <div id="cityname" style="left:40px"><strong>Hyderabad</strong></div>
+                   </div>
+                    <div class="shade shade1">
+                        <a href="list.html">  <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"><br/></a>
+                         <!-- <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"><br/> -->
+                         <div id="cityname" style="left:50px"><strong>Kolkata</strong></div>
+                   </div>
+                 </div ><br/><br/><br/>
+                  
+                 <div class="view3" id="metro">
+                     <div class="shade shade1">
+                         <a  href ="list.html"><img id="img2"  class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg"></a>
+                         <div id="cityname"><strong>Chennai</strong></div>
+                     </div>
+                     <div class="shade shade1">
+                        <a href="list.html"> <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg"></a>
+                            <!-- <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg"> -->
+                        <div id="cityname"><strong>Agra</strong></div>
+                     </div>
+                     <div class="shade shade1">
+                        <a href="list.html">  <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" ></a>
+                            <!-- <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" > -->
+                            <div id="cityname" ><strong>Jaipur</strong></div>
+                     </div>
+                     <div class="shade shade1">
+                        <a href="list.html"> <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"><br/></a>
+                            <!-- <img id="img2" class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"><br/> -->
+                            <div id="cityname" style="left:50px"><strong>Bengaluru</strong></div>
+                     </div>
+                 </div><br/><br/>
+                 <div style="margin-left: 50%;">
+                     <button type="button" id="view-more-button" class="btn btn-secondary text font" onclick="myFunction()">View More</button>
+                 </div>
+             </div>
+            
+             <footer class="footerFixed pad " id="footernav"></footer>
+          
+             <div class="modal fade" id="contactmodal"></div>
+         </div>
+         <script src="scripts\common.js"></script> 
+         <script src="scripts\index.js"></script>
+    </body>
+</html> 

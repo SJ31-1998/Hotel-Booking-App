@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles/payment.css">
+        <link rel="stylesheet" href="styles/common.css">
+    </head>
+    <body>
+        <div>
+            <header class="headerFixed" id="headernav"></header>
+
+           <div class="modal fade" id="loginModal"></div>
+
+            <div class="background  view8" style="width:50%;margin-left: 25%;margin-top: 5%;">
+            <div>
+                <img id="img2" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+            </div>
+            <div  class="font" style="padding-left: 10px;">
+             <h2>Radisson Blu Hotel</h2>
+                <p> #38 of 1,289 hotels in New Delhi <br/></p>
+                <p>National Highway 8, New Delhi 110017 India</p> 
+            </div>
+        </div>
+
+           <div class=" view9" style="margin:2% ;border:1px solid black;padding:1%2%1%2%; border-radius: 5px;">
+           <div class=" font">
+              <strong class="font1">Name:</strong>Jhone Doe<br/><br/>
+              <strong class="font1">Number of Adults:</strong>2<br/><br/>
+              <strong class="font1">Check-in Date:</strong>06/06/2020<br/><br/>
+              <strong class="font1">Check-out Date:</strong>08/06/2020
+           </div>
+
+           <div class="font"> 
+             <p> <strong class="font1">Tariff Breakdown:</strong>Rs.1000 x 2 Adults x5 Nights</p>
+             <p><strong class="font1">Total Amount:</strong>Rs.10000</p> 
+           </div>
+             <div class="font">
+              <!-- <p><a id="link" class="font" href="#">Pay Now</a></p> -->
+              <a href="#" id="pay-now">
+                <button id="pay-now-button" type="button" class="btn btn-success" onclick="payNow(event)">Pay Now</button>
+            </a>
+              <!-- <button type="button" class="btn btn-success">Pay Now</button> -->
+            </div>
+            </div>
+            </div>
+            <footer class="footerFixed pad " id="footernav"></footer>
+         
+            <div class="modal fade" id="contactmodal"></div>
+    </div>
+    <script src="scripts\common.js"></script> 
+    <script src="scripts\index.js"></script>
+</body>
+</html>

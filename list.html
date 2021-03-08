@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="styles\list.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link href="styles\common.css" rel="stylesheet">
+       
+
+    </head>
+    <body >
+        <div class="content">
+            <header class="headerFixed" id="headernav"></header>
+            <div class="modal fade" id="loginModal"></div>
+          <div>
+                <div class="view">
+                       <!-- Added nav pills/tabs for list view and map view  -->
+                 <div style="padding: 20px;">
+                     <button type="button" class="btn btn-primary"><strong><a id="link" class="font" href="#img2">List View</a></strong></button>
+                 </div>
+                  <div style="padding: 20px;">
+                     <button type="button" class="btn btn-primary" id="mapbtn" onclick="mapFunction()"><strong><a id="link" class="font" href="#mapView">Map View</a></strong></button>   
+                </div>
+              </div>
+
+              <div class="view1" id="divone" class="divthree" >
+                 <div class="background view5" id="divtwo" style="width:550px;margin-left: 4%;margin-bottom: 4%;">
+                     <div>
+                         <a id="link" href="detail.html"><img id="img2"  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"></a>
+                     </div>
+                     <div  style="padding-left: 10px;">
+                         <a id="link" class="font" href="detail.html"><h3 >Radisson Blu Hotel</h3><br/>
+                          <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                          <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                          <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                          <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                          <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i><br/><br/>
+                         <p> New Delhi</p></a>
+                     </div>
+                 </div>
+                 <div class="background  view5" id="divtwo" style="width:550px;margin-right: 4%;margin-bottom: 4%;">
+                     <div>
+                         <img id="img2" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg">
+                     </div>
+                     <div class="font"  style="padding-left: 10px;">
+                         <h3>The Lalit New Delhi</h3><br/>
+                         <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                         <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                         <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                         <i class="fa fa-star-half" aria-hidden="true" style="color:gold;"></i>
+                         <i class="fa fa-star" aria-hidden="true"></i><br/><br/>
+                         <p>New Delhi</p> 
+                     </div>
+                 </div>
+          </div>
+         
+          <div class="view1" id="divone">
+             <div  class="background view5 divthree" id="divtwo" style="width:550px;margin-left: 4%;margin-bottom: 4%;">
+                 <div i\>
+                     <img id="img2" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg">
+                 </div>
+                 <div class="font" style="padding-left: 10px;">
+                     <h3>Taj Palace</h3><br/>
+                     <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                     <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                     <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                     <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i><br/><br/>
+                     <p>New Delhi</p> 
+                 </div>
+             </div>
+         </div>
+         <!-- <div style="display:none"> -->
+         <div id="mapView">
+             <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"><br/>
+         </div>
+         </div>   
+        
+         <footer class="footerFixed pad " id="footernav"></footer>
+        
+         <div class="modal fade" id="contactmodal"></div>
+      </div>
+      <script src="scripts\common.js"></script> 
+      <script src="scripts\list.js"></script>
+  </body>
+</html>

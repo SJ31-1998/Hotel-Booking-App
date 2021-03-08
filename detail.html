@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detail</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="styles\detail.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link href="styles\common.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <header class="headerFixed" id="headernav"></header>
+
+            <div class="modal fade" id="loginModal"></div>
+
+            <!-- <div class="col-sm-4"> -->
+             <div class="margin view6" style="height:450px;border:1px solid black">
+                 <div style="width:70%">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+                     <div class="carousel-inner" >
+                          <div class="carousel-item active" style="width:50%;left:23%;margin-top:5%;"> 
+                             <img class="d-block w-100" style="height:350px;left:10% ;" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item" style="width:50%;left:23%;margin-top:5%;">
+                             <img class="d-block w-100" style="height:350px;"  src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item" style="width:50%;left:23%;margin-top:5%;">
+                             <img class="d-block w-100" style="height:350px;" src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" alt="Third slide">
+                          </div>
+                     </div>
+                       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="sr-only"  style="color:rosybrown">Previous</span>
+                       </a>
+                        <a class="carousel-control-next"  href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only"  style="color:rosybrown">Next</span>
+                        </a>
+                      </div>
+                     <!-- <img style="height:350px;margin-left: 22%;margin-top: 5%;"  id="img2" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br/> -->
+                 </div>
+                 <div style="width:30%;border-left:1px solid black;"> 
+                     <form action="payment.html" method="get" autocomplete="off" class="font">
+                            <label for="adult">Adults:</label>
+                            <input type="number" min="1" id="adult" name="adult"value="1" min="1" required>
+                             
+                            <label for="name">Name:</label>
+                            <input type="name" id="name" name="name" required>
+                             
+                            <label for="fromDate">From Date:</label>
+                            <input type="date"  id="fromDate" name="from date" oninput="updatePrice()" required>
+                             
+                            <label for="to date">To Date:</label>
+                            <input type="date"  id="toDate" name="to date"  oninput="updatePrice()" required>
+                             
+                            <label for="total">Total:</label>
+                            <!-- <input type="text"  id="total" name="total"> -->
+                            <input  type="text" name="price" id="price" readonly/>
+                            <input  type="hidden" id="id" name="id">
+                          <!-- <a href="payment.html"> -->
+                           <button type="submit" id="bookbtn" class="btn btn-outline-success" value="Book Now">Book Now</button>
+                          <!-- </a> -->
+                     </form>
+                </div>
+             </div>
+   
+             <div class="margin">
+                    <h3 class="font">Radisson Blu Hotel</h3>
+                    <span class="font1"><strong>Rating</strong><br/></span>
+                    <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                    <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                    <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                    <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+                    <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i><br/>
+                    
+                    <span class="font1"><strong> AMENITIES</strong><br/></span>
+
+                    <ul class="font">
+                        <li>Room Service</li>
+                        <li>Restarunant</li>
+                        <li>Business Center</li>
+                        <li>Fitness Center</li>
+                        <li>Pool</li>
+                    </ul>
+                    <span class="font1"><strong>DISCREPTION</strong></span>
+                    <p class="font">Lorem ipsum dolor sit amet consectetur adipissicing elit Deleniti, illum totam magni voluptatibus libero delctus nesciunt hic vell Aperism esse asperiores culpa , natus quam eum ex doloremque
+                    doloribus architecto!
+                    </p>
+            </div>
+         </div>
+         <footer class="footerFixed pad " id="footernav"></footer>
+         <div class="modal fade" id="contactmodal"></div></div>
+      <script src="scripts\common.js"></script> 
+      <!-- <script src="scripts\index.js"></script> -->
+      <script src="scripts\detail.js"></script>
+    </body>
+</html>

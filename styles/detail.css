@@ -1,0 +1,46 @@
+#img2{
+    height: 500px ;
+    width:  500px;
+}
+
+.margin{
+    margin:2%;
+   
+}
+.view6{
+    display:flex;
+    flex-direction: row;
+
+}
+
+form {
+    display:flex;
+    justify-content: center;
+    display: grid;
+    grid-row-gap:40px;
+    padding-top: 10%; 
+}
+label {
+
+    grid-column: 1 / 2;
+}
+ 
+input {
+    grid-column: 2 / 3;
+    width:100%;
+    
+}
+.font1{
+    font-family: cursive;
+}
+
+
+@media (min-width:576px) and (max-width:768px){
+    #divone{
+            padding-left:0%;
+            width:100%;
+            margin:0%;
+     }
+
+}
+
